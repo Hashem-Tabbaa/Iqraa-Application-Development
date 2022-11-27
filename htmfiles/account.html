@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>The Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Main Section -->
+    <section class="colored-section" id="header">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <div class="socials">
+                <a class="login-signin" href="login.html">Login</a>
+                <a class="login-signin mr-3" href="signup.html">Signup</a>
+                <a class="social-icon mr-3" href="#"><img src="../images/facebook.png" alt=""></a>
+                <a class="social-icon mr-3" href="#"><img src="../images/twitter.png" alt=""></a>
+                <a class="social-icon mr-3" href="#"><img src="../images/instagram.png" alt=""></a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark pb-4">
+
+                <a class="navbar-brand" href="index.html">The Bookstore</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons" href="#"><img class="" src="../images/user.png" alt=""></a>
+                            <a class="nav-text nav-link ">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons ml-2" href="#"><img class="" src="../images/shopping-cart.png"
+                                    alt=""></a>
+                            <a class="nav-text nav-link">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons ml-3" href="#"><img class="" src="../images/wishlist.png"
+                                    alt=""></a>
+                            <a class="nav-text nav-link ">Wishlist</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="accountPage d-flex p-5 ">
+        <div class="addressInfo card">
+            <h4 class="card-title">Address Information</h4>
+            <hr class="m-0">
+            <div class="card-body text-left d-flex justify-content-between">
+                <div class="changeAccountInfo addressInfoSection">
+                    <div class="Unhidden">
+                        <h6 class="font-weight-bold">City:</h6>
+                        <p>Amman</p>
+                        <h6 class="font-weight-bold">Place</h6>
+                        <p>Tlaa Al Ali</p>
+                        <h6 class="font-weight-bold">Street Name</h6>
+                        <p>Rifaa Al Ansari</p>
+                        <h6 class="font-weight-bold">Building Number</h6>
+                        <p>25</p>
+                    </div>
+                    <div class="hidden changeAddressSection">
+                        <form action="" method="POST">
+                            <div class="form-floating">
+                                <label class="font-weight-bold m-0" for="city">*New City</label>
+                                <select id="city" class="form-select ml-2" aria-label="Default select example"
+                                    name="city">
+                                    <option value="Amman">Amman</option>
+                                    <option value="Irbid">Irbid</option>
+                                    <option value="Zarqa">Zarqa</option>
+                                    <option value="Jerash">Jerash</option>
+                                    <option value="Madaba">Madaba</option>
+                                    <option value="Aqaba">Aqaba</option>
+                                    <option value="Karak">Karak</option>
+                                    <option value="Mafraq">Mafraq</option>
+                                    <option value="Ajloun">Ajloun</option>
+                                    <option value="Maan">Ma'an</option>
+                                    <option value="Tafelah">Tafelah</option>
+                                    <option value="Balqa">Balqa</option>
+                                </select>
+                            </div>
+                            <div class="form-floating">
+                                <label class="font-weight-bold m-0" for="place">*New Place</label>
+                                <input id="place" type="text" class="form-control" name="place" required>
+                            </div>
+                            <div class="form-floating">
+                                <label class="font-weight-bold m-0" for="StreetName">*New Street Name</label>
+                                <input id="StreetName" type="text" class="form-control" name="place" required>
+                            </div>
+                            <div class="form-floating mt-3">
+                                <label class="font-weight-bold" for="buildingNumber">*Building Number</label>
+                                <input type="number" class="form-control" id="buildingNumber" name="buildingNumber"
+                                    required>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-2" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <button class="btn btn-dark btn-sm changebtn" id="changeAddress">Change</button>
+            </div>
+        </div>
+        <div class="securityAndlogin card">
+            <h4 class="card-title">Security & Login</h4>
+            <hr class="m-0">
+            <div class="card-body text-left">
+                <div class="d-flex changeAccountInfo">
+                    <h6 class="font-weight-bold">Email:</h6>
+                    <button class="btn btn-dark btn-sm changebtn" id="changeEmail">Change</button>
+                </div>
+                <p>Hashem_Tabbaa@hotmail.com</p>
+                <div class="hidden changeEmailSection">
+                    <form action="" method="POST">
+                        <div class="form-floating">
+                            <label class="font-weight-bold m-0" for="email">*New Email</label>
+                            <input type="email" class="form-control mb-2" id="email" name="email" required>
+                        </div>
+                        <div class="form-floating">
+                            <label class="font-weight-bold m-0" for="password">*Password</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-2" type="submit">Submit</button>
+                    </form>
+                </div>
+                <hr>
+                <div class="d-flex changeAccountInfo">
+                    <h6 class="font-weight-bold">Phone Number:</h6>
+                    <button class="btn btn-dark btn-sm changebtn" id="changePhone">Change</button>
+                </div>
+                <p>0795697750</p>
+                <div class="hidden changePhoneSection">
+                    <form action="" method="POST">
+                        <div class="form-floating mt-3">
+                            <label class="font-weight-bold" for="phoneNumber">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber">
+                            <p class="checkPhoneNumber"></p>
+                        </div>
+                        <div class="form-floating">
+                            <label class="font-weight-bold m-0" for="password">*Password</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-2 submitBtn" type="submit">Submit</button>
+                    </form>
+                </div>
+                <hr>
+                <div class="d-flex changeAccountInfo">
+                    <h6 class="font-weight-bold">Password:</h6>
+                    <button class="btn btn-dark btn-sm changebtn" id="changePassword">Change</button>
+                </div>
+                <p>************</p>
+                <div class="hidden changePasswordSection">
+                    <form action="" method="POST">
+                        <div class="form-floating">
+                            <label class="font-weight-bold m-0" for="password">*Old Password</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <div class="form-floating">
+                            <label class="font-weight-bold m-0" for="password">*New Password</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <div class="form-floating">
+                            <label class="font-weight-bold m-0" for="password">*New Password Again</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-2 float-right" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('#phoneNumber').addEventListener('keyup', (element) => {
+            var phoneNumber = document.querySelector('#phoneNumber').value;
+
+            var valid = !isNaN(
+                phoneNumber); //check if the phone number does not contain text using isNaN function.
+
+            //if the phone number length is greater than 2, check the if the first three digits are valid jordanian compainies.
+            if (phoneNumber.length > 2) {
+                var firstThreeDigits = phoneNumber[0] + phoneNumber[1] + phoneNumber[2];
+                if (firstThreeDigits !== "079" && firstThreeDigits !== "078" && firstThreeDigits !== "077")
+                    valid = !valid;
+            }
+
+            //check if the phone number length is valid (10 digits)
+            if ((phoneNumber.length > 0 && phoneNumber.length < 10) || !valid) {
+                document.querySelector('.checkPhoneNumber').innerHTML = "*Invalid phone number.";
+                document.querySelector('.submitBtn').disabled = true;
+            } else {
+                document.querySelector('.checkPhoneNumber').innerHTML = "";
+                document.querySelector('.submitBtn').disabled = false;
+            }
+        });
+        document.querySelectorAll('.hidden').forEach(element =>{element.style.display = "none"})
+        document.querySelectorAll('.changebtn').forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault();
+                var sectionClass = "." + element.id + "Section";
+                var sectionStatus = document.querySelector(sectionClass).style.display;
+                if (element.id == "changeAddress") {
+                    if (sectionStatus == "none")
+                        document.querySelector('.Unhidden').style.display = "none";
+                    else 
+                        document.querySelector('.Unhidden').style.display = "block";
+                }
+                if (sectionStatus == "none")
+                    document.querySelector(sectionClass).style.display = "block";
+                else
+                    document.querySelector(sectionClass).style.display = "none";
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <section class="colored-section footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start ">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>The Bookstore
+                            </h6>
+                            <p>
+                                Located in Jordan, Amman. At University Street, building 25.
+                            </p>
+                        </div>
+                        <div class="mt-5 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                About Us
+                            </h6>
+                            <p>
+                                We are a jordanian eccomerce company.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Categories</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Contact</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Account</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Contact
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Jordan, Amman</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                thebookstore@hotmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 962 795 697 750</p>
+                            <p><i class="fas fa-print me-3"></i> + 962 132 456 78</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+                Developed and Maintained by Hashem Altabbaa.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+
+</body>
+
+</html>

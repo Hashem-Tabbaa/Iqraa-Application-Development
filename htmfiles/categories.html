@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>The Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Main Section -->
+    <section class="colored-section" id="header">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <div class="socials">
+                <a class="login-signin" href="login.html">تسجيل الدخول</a>
+                <a class="login-signin mr-3" href="signup.html">انشاء حساب</a>
+            </div>
+            <nav class="navbar navbar-expand-lg pb-4">
+
+                <a class="navbar-brand" href="/index.html">إقرأ</a>
+
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">تواصل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">التصنيفات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons" href="./account.html"><img class="" src="../images/user.png"
+                                    alt=""></a>
+                            <a class="nav-text nav-link" href="./account.html">حسابي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons ml-2" href="cart.html"><i class="fas fa-book fa-lg"></i></a>
+                            <a class="nav-text nav-link" href="cart.html">كتبي</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="categories-container d-flex">
+        <aside class="categories-checkbox ">
+            <div>
+                <input type="checkbox" value="Historical" id="Historical" checked>
+                <label for="Historical">تاريخي</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Scientific" id="Scientific">
+                <label for="Scientific">علمي</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Biography" id="Biography">
+                <label for="Biography">سيرة ذاتية</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="For-Children" id="For-Children">
+                <label for="For-Children">مخصص للأطفال</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Humor-games" id="Humor-games">
+                <label for="Humor-games">ألغاز و تسلية</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Poetry" id="Poetry">
+                <label for="Poetry">قصائد</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="Romance" id="Romance">
+                <label for="Romance">روايات</label>
+            </div>
+        </aside>
+        <div class="categories">
+            <div class="category Historical">
+                <h4 class="font-weight-bold text-left p-4">تاريخي</h4>
+                <div class="products-gird d-flex">
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category Scientific">
+                <h4 class="font-weight-bold text-left p-4">علمي</h4>
+                <div class="products-gird">
+                    <div class="card product-card ">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category Biography">
+                <h4 class="font-weight-bold text-left p-4">سيرة ذاتية</h4>
+                <div class="products-gird">
+                    <div class="card product-card ">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category For-Children">
+                <h4 class="font-weight-bold text-left p-4">مخصص للأطفال</h4>
+                <div class="products-gird">
+                    <div class="card product-card ">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category Humor-games">
+                <h4 class="font-weight-bold text-left p-4">ألغاز و تسلية</h4>
+                <div class="products-gird">
+                    <div class="card product-card ">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category Poetry">
+                <h4 class="font-weight-bold text-left p-4">قصائد</h4>
+                <div class="products-gird">
+                    <div class="card product-card ">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="category Romance">
+                <h4 class="font-weight-bold text-left p-4">روايات</h4>
+                <div class="products-gird">
+                    <div class="card product-card ">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/1.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Angela Davis</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/3.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Guinness World Records 2022</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/2.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atlas of the Heart</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/4.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Atomic Habits</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/5.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">It Ends With Us</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                    <div class="card product-card">
+                        <img class="card-img-top p-1 product-img" src="../images/booksImages/6.jpg" alt="">
+                        <div class="card-body">
+                            <a href="#" class="card-title">Katt Loves Dogg</a>
+                        </div>
+                        <button class="add-toCart-btn btn" type="submit"><i class="fas fa-book"></i> استأجر الكتاب</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('input').forEach(element => {
+            if (element.checked === false) {
+                var categoryClass = "." + element.value;
+                document.querySelector(categoryClass).style.display = "none";
+            }
+            element.addEventListener('click', (e) => {
+                var categoryClass = "." + element.value;
+                if (element.checked === false) {
+                    document.querySelector(categoryClass).style.display = "none";
+                } else {
+                    document.querySelector(categoryClass).style.display = "inherit";
+                }
+            })
+        });
+    </script>
+    <!-- Footer -->
+    <section class="colored-section footer" id="footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start ">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>IQRAA
+                            </h6>
+                            <p>
+                                إقرأ هو مشروع خيري مدعوم من قبل منظمة الامم المتحدة, يهدف الى تطوير مجتمع اللاجئين من خلال تشجيعهم على القراءة والتعلم.
+                            </p>
+                        </div>
+                        <div class="mt-5 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                قصتنا
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                صفحات مهمة
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">اصناف الكتب</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">حسابي</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">كتبي</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                معلومات التواصل
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Jordan, Amman</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                Iqraa@hotmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 962 798 564 55</p>
+                            <p><i class="fas fa-print me-3"></i> + 962 132 456 78</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+                Developed and Maintained by Hashem Altabbaa.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+</body>
+
+</html>

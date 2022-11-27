@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>The Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Main Section -->
+    <section class="colored-section" id="header">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <div class="socials">
+                <a class="login-signin" href="login.html">تسجيل الدخول</a>
+                <a class="login-signin mr-3" href="signup.html">انشاء حساب</a>
+            </div>
+            <nav class="navbar navbar-expand-lg pb-4">
+
+                <a class="navbar-brand" href="/index.html">إقرأ</a>
+
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">تواصل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">التصنيفات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons" href="./account.html"><img class="" src="../images/user.png"
+                                    alt=""></a>
+                            <a class="nav-text nav-link" href="./account.html">حسابي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons ml-2" href="cart.html"><i class="fas fa-book fa-lg"></i></a>
+                            <a class="nav-text nav-link" href="cart.html">كتبي</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div class="login p-5 w-100">
+        <div class="w-100">
+            <main class="form-signin m-auto w-75">
+                <form>
+                    <img src="../images/user-login.png" alt="">
+                    <h1 class="h3 mt-3 fw-normal">انشاء حساب</h1>
+                    <div class="form-floating mt-3">
+                        <label class="font-weight-bold" for="fullName">الاسم الكامل</label>
+                        <input type="tel" class="form-control" id="fullName" placeholder="اسمك الكامل" name="fullName" required>
+                    </div>
+                    <div class="first-last-name form-floating mt-3 row pl-3">
+                        <div class="first-name">
+                            <label class="font-weight-bold" for="residentNumber">*رقم المسكن</label>
+                            <input type="text" class="form-control" id="residentNumber" name="residentNumber" required>
+                        </div>
+                        <div class="last-name">
+                            <label class="font-weight-bold" for="camp">*المخيم</label>
+                            <select id="camp" class="form-select ml-2" aria-label="Default select example" name="camp">
+                                <option value="zaatari">مخيم الزعتري</option>
+                                <option value="azraq">مخيم الازرق</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="first-name">
+                        <label class="font-weight-bold" for="phoneNumber">رقم الهاتف (إن وجد)</label>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" >
+                    </div>
+                    <div class="form-floating mt-3">
+                        <div class="form-floating">
+                            <label class="font-weight-bold" for="password">*كلمة المرور</label>
+                            <input type="password" class="form-control" id="password" placeholder="كلمة المرور" name="password"
+                                required>
+                        </div>
+                        <div class="form-floating mt-3">
+                            <label class="font-weight-bold" for="passwordAgain">*تأكيد كلمة المرور</label>
+                            <input type="password" class="form-control" id="passwordAgain" placeholder="تأكيد كلمة المرور"
+                                name="passwordAgain" required>
+                            <p class="checkPassword"></p>
+                        </div>
+                    </div>
+                    <button class="login-btn w-100 btn btn-lg btn-primary mt-3" id="signupBtn" type="submit">انشاء حساب</button>
+                </form>
+                <h5 class="create-account-text mt-4">لديك حساب؟</h5>
+                <a href="login.html" class="signup-btn w-100 btn btn-lg btn-primary mt-3" type="submit">تسجيل الدخول</a>
+            </main>
+
+        </div>
+        <!-- <div class="login-image">
+            <img src="../images/login-book.png" alt="">
+        </div> -->
+    </div>
+    <!-- Footer -->
+    <section class="colored-section footer">
+       <!-- Footer -->
+    <section class="colored-section footer" id="footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start ">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>IQRAA
+                            </h6>
+                            <p>
+                                إقرأ هو مشروع خيري مدعوم من قبل منظمة الامم المتحدة, يهدف الى تطوير مجتمع اللاجئين من خلال تشجيعهم على القراءة والتعلم.
+                            </p>
+                        </div>
+                        <div class="mt-5 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                قصتنا
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                صفحات مهمة
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">اصناف الكتب</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">حسابي</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">كتبي</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                معلومات التواصل
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Jordan, Amman</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                Iqraa@hotmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 962 798 564 55</p>
+                            <p><i class="fas fa-print me-3"></i> + 962 132 456 78</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+                Developed and Maintained by Hashem Altabbaa.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script>
+        document.querySelector('#password').addEventListener('keyup', (element) => {
+            var password = document.querySelector('#password').value;
+            var passwordAgain = document.querySelector('#passwordAgain').value;
+            if (password !== passwordAgain && passwordAgain.length > 0) {
+                document.querySelector('.checkPassword').innerHTML = "*The password is incorrect.";
+                document.querySelector('#signupBtn').disabled = true;
+            } else {
+                document.querySelector('.checkPassword').innerHTML = "";
+                document.querySelector('#signupBtn').disabled = false;
+            }
+        });
+        document.querySelector('#passwordAgain').addEventListener('keyup', (element) => {
+            var password = document.querySelector('#password').value;
+            var passwordAgain = document.querySelector('#passwordAgain').value;
+            if (password !== passwordAgain && passwordAgain.length > 0) {
+                document.querySelector('.checkPassword').innerHTML = "*The password is incorrect.";
+                document.querySelector('#signupBtn').disabled = true;
+            } else {
+                document.querySelector('.checkPassword').innerHTML = "";
+                document.querySelector('#signupBtn').disabled = false;
+            }
+        });
+        document.querySelector('#phoneNumber').addEventListener('keyup', (element) => {
+            var phoneNumber = document.querySelector('#phoneNumber').value;
+
+            var valid = !isNaN(
+            phoneNumber); //check if the phone number does not contain text using isNaN function.
+
+            //if the phone number length is greater than 2, check the if the first three digits are valid jordanian compainies.
+            if (phoneNumber.length > 2) {
+                var firstThreeDigits = phoneNumber[0] + phoneNumber[1] + phoneNumber[2];
+                if (firstThreeDigits !== "079" && firstThreeDigits !== "078" && firstThreeDigits !== "077")
+                    valid = !valid;
+            }
+
+            //check if the phone number length is valid (10 digits)
+            if ((phoneNumber.length > 0 && phoneNumber.length < 10) || !valid) {
+                document.querySelector('.checkPhoneNumber').innerHTML = "*Invalid phone number.";
+                document.querySelector('#signupBtn').disabled = true;
+            } else {
+                document.querySelector('.checkPhoneNumber').innerHTML = "";
+                document.querySelector('#signupBtn').disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

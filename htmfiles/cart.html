@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>The Bookstore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- Main Section -->
+    <section class="colored-section" id="header">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <div class="socials">
+                <a class="login-signin" href="login.html">تسجيل الدخول</a>
+                <a class="login-signin mr-3" href="signup.html">انشاء حساب</a>
+            </div>
+            <nav class="navbar navbar-expand-lg pb-4">
+
+                <a class="navbar-brand" href="/index.html">إقرأ</a>
+
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">تواصل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">التصنيفات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons" href="./account.html"><img class="" src="../images/user.png"
+                                    alt=""></a>
+                            <a class="nav-text nav-link" href="./account.html">حسابي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icons ml-2" href="cart.html"><i class="fas fa-book fa-lg"></i></a>
+                            <a class="nav-text nav-link" href="cart.html">كتبي</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <h4 class="font-weight-bold text-left mt-3" style="margin-left: 100px;">كتبي</h4>
+    <div class="d-flex cartPage">
+        <div class="cart-products">
+            <div class="cart-product-card p-4 m-2">
+                <div>
+                    <img class="cart-products-img" src="../images/booksImages/1.jpg" alt="">
+                </div>
+                <div class="cart-products-info">
+                    <h4 class="font-weight-bold">Angela Davis</h4>
+                    <div class="quantity-section">
+                        <h6 class="font-weight-bold">عدد ايام الاستعارة </h6>
+                        <div class="d-flex quantity-box align-items-baseline">
+                            <button type="button" class="btn-sm btn minus-btn circle mr-2" id="m1">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input class="quantity" value="1" id="v1" disabled></input>
+                            <button type="button" class="btn btn-sm plus-btn circle ml-2" id="p1">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-btns d-flex">
+                        <button type="submit" class="btn remove-btn btn-dark">حذف</button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <p>John Koenig (Author)</p>
+                    <hr>
+                    <h5 class="cart-description">وصف الكتاب</h5>
+                    <p class="cart-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta
+                        placeat dolore debitis aperiam quasi excepturi ipsam veritatis, numquam perspiciatis accusamus
+                        atque! Ratione suscipit aspernatur odio deleniti magnam, nobis vitae?</p>
+                </div>
+            </div>
+            <div class="cart-product-card p-4 m-2">
+                <div>
+                    <img class="cart-products-img" src="../images/booksImages/2.jpg" alt="">
+                </div>
+                <div class="cart-products-info">
+                    <h4 class="font-weight-bold">Atlas of The Heart</h4>
+                    <div class="quantity-section">
+                        <h6 class="font-weight-bold">عدد ايام الاستعارة</h6>
+                        <div class="d-flex quantity-box align-items-baseline">
+                            <button type="button" class="btn-sm btn minus-btn circle mr-2" id="m2">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input class="quantity" value="1" id="v2" disabled></input>
+                            <button type="button" class="btn btn-sm plus-btn circle ml-2" id="p2">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-btns d-flex">
+                        <button type="submit" class="btn remove-btn btn-dark">حذف</button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <p>John Koenig (Author)</p>
+                    <hr>
+                    <h5 class="cart-description">وصف الكتاب</h5>
+                    <p class="cart-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta
+                        placeat dolore debitis aperiam quasi excepturi ipsam veritatis, numquam perspiciatis accusamus
+                        atque! Ratione suscipit aspernatur odio deleniti magnam, nobis vitae?</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-info sticky-top">
+            <div class="invoice">
+                <h5 class="font-weight-bold"> معلومات المسكن</h5>
+                <p>مخيم الزعتري - مسكن رقم 15</p>
+                <p>رقم اللاجئ : 123456789</p>
+                <p class="note text-right   ">*يتوقع وصول الكتاب خلال يومين من تاريخ الطلب</p>
+                <hr>
+                <h5 class="font-weight-bold mb-3">تفاصيل الطلب</h5>
+                <p>Angela Davis : 3 ايام</p>
+                <p>Atlas of The Heart : 7 ايام</p>
+                <hr>
+                <button type="submit" class="btn btn-primary">ارسال الطلب</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.plus-btn').forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault();
+                var quantityID = "#v" + element.id[1];
+                // alert(quantityID);
+                var value = parseInt(document.querySelector(quantityID).value);
+                if (value < 10)
+                    document.querySelector(quantityID).value = value + 1;
+            });
+        });
+        document.querySelectorAll('.minus-btn').forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault();
+                var quantityID = "#v" + element.id[1];
+                // alert(quantityID);
+                var value = parseInt(document.querySelector(quantityID).value);
+                if (value > 1)
+                    document.querySelector(quantityID).value = value - 1;
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <section class="colored-section footer" id="footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start ">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>IQRAA
+                            </h6>
+                            <p>
+                                إقرأ هو مشروع خيري مدعوم من قبل منظمة الامم المتحدة, يهدف الى تطوير مجتمع اللاجئين من
+                                خلال تشجيعهم على القراءة والتعلم.
+                            </p>
+                        </div>
+                        <div class="mt-5 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                قصتنا
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                صفحات مهمة
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">اصناف الكتب</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">حسابي</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">كتبي</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mt-5 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                معلومات التواصل
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Jordan, Amman</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                Iqraa@hotmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 962 798 564 55</p>
+                            <p><i class="fas fa-print me-3"></i> + 962 132 456 78</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+                Developed and Maintained by Hashem Altabbaa.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+</body>
+
+</html>
